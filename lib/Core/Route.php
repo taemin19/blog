@@ -11,6 +11,7 @@ class Route
 	* @var string 
 	*/
 	protected $url;
+	protected $module;
 	protected $action;
 	/**
 	* @var array variable names
@@ -24,9 +25,10 @@ class Route
 	* @param string $action
 	* @param array $varsNames
 	*/
-	public function __construct($url, $action, array $varsNames)
+	public function __construct($url, $module, $action, array $varsNames)
 	{
 		$this->setUrl($url);
+		$this->setModule($module);
 	    $this->setAction($action);
 	    $this->setVarsNames($varsNames);
 	}
@@ -63,10 +65,19 @@ class Route
 	*/
 	public function setUrl($url)
 	{
-		if (is_string($url)) {
+		if (is_string($url)) 
+		{
 			$this->url = $url;
 		}
 	}
+
+	public function setModule($module)
+  	{
+    	if (is_string($module))
+    	{
+     	 	$this->module = $module;
+    	}
+  	}
 
 	public function setAction($action)
   	{
@@ -89,6 +100,11 @@ class Route
   	/**
   	* Getters
   	*/
+  	public function module()
+  	{
+    	return $this->module;
+  	}
+
   	public function action()
   	{
     	return $this->action;
