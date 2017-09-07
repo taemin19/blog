@@ -11,7 +11,7 @@ class HTTPRequest extends ApplicationComponent
 	* @param string $key
 	* @return GET variable
 	*/
-	public funtion getData($key)
+	public function getData($key)
 	{
 		return isset($_GET[$key]) ? $_GET[$key] : null;
 	}
@@ -20,7 +20,7 @@ class HTTPRequest extends ApplicationComponent
 	* @param string $key
 	* @return POST variable
 	*/
-	public funtion postData($key)
+	public function postData($key)
 	{
 		return isset($_POST[$key]) ? $_POST[$key] : null;
 	}
@@ -28,7 +28,7 @@ class HTTPRequest extends ApplicationComponent
 	/**
 	* @return Request method
 	*/
-	public funtion requestMethod()
+	public function requestMethod()
 	{
 		return $_SERVER['REQUEST_METHOD'];
 	}
@@ -36,7 +36,7 @@ class HTTPRequest extends ApplicationComponent
 	/**
 	* @return Request URI
 	*/
-	public funtion requestURI()
+	public function requestURI()
 	{
 		return $_SERVER['REQUEST_URI'];
 	}
