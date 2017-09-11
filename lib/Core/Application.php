@@ -37,11 +37,17 @@ abstract class Application
 		
 		// Get the route matching with URL
 		$matchedRoute = $router->getRoute($this->httpRequest->requestURI());
-		
+
+		// If the route doesn't match, redirect to a 404 page
+		if ($matchedRoute == false)
+		{
+			$this->httpResponse->redirect404();
+		}
+
 		// Add URL variables
 		$_GET = array_merge($_GET, $matchedRoute->vars());
 
-		$controller = 'app\\'.$this->name.'\\Modules\\'.$matchedRoute->module().'\\'.$matchedRoute->module().'Controller';
+		$controller = 'app\\'.$this->name.'\\Controller\\'.$matchedRoute->module().'Controller';
 		
     	return new $controller($this, $matchedRoute->module(), $matchedRoute->action());
 
