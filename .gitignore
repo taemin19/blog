@@ -2,3 +2,8 @@
 /lib/composer.json
 /lib/composer.lock
 /lib/vendor/
+
+# Config
+/app/Frontend/Config
+/app/Backend/Config
+/web/.htaccess
