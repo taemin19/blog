@@ -1,0 +1,4 @@
+# Composer
+/lib/composer.json
+/lib/composer.lock
+/lib/vendor/
