@@ -245,3 +245,170 @@ footer ul li a:active,
 footer ul li a.active {
   text-decoration: none;
 }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  overflow-y: hidden;
+  background: url("../img/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+header .header-content {
+  text-align: center;
+  padding: 150px 0 50px;
+  position: relative;
+}
+header .header-content .header-content-inner {
+  position: relative;
+  margin: 0 auto;
+  color: #FFFFFF;
+
+}
+header .header-content .header-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-shadow: 3px 4px 4px rgba(0,0,0,.30);
+}
+header .header-content .header-content-inner ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    text-align: left;
+    padding: 0;
+    height: 100vh;
+  }
+  header .header-content .header-content-inner {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  header .header-content .header-content-inner h1 {
+    font-size: 60px;
+  }
+}
+
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+section {
+  padding: 100px 0;
+}
+section h2 {
+  font-size: 40px;
+}
+
+section.skills {
+  background-color: #222222;
+}
+section.contact {
+  background-color: #FAFAFA;
+}
+
+section .section-heading {
+  margin-bottom: 100px;
+}
+section .section-heading h2 {
+  margin-top: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+section .section-heading p {
+  margin-bottom: 0;
+}
+
+section .feature-item, section .feature-button {
+  text-align: center;
+}
+section .feature-item {
+  margin-bottom: 100px;
+}
+section .feature-item h3 {
+  font-size: 30px;
+}
+section .feature-item i {
+  font-size: 80px;
+  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section .feature-button {
+  margin-top: 100px;
+}
+
+section.skills {
+  color: #fff;
+}
+section.skills .feature-item .progress {
+  background-color: #444444;
+  height: 35px;
+}
+section.skills .feature-item .progress-bar {
+  background-color: #FFC600;
+  line-height: 35px;
+}
+
+section.contact .contact-icon {
+  background: #fdcc52;
+  border-radius: 50%;
+  float: left;
+  height: 34px;
+  margin-right: 30px;
+  text-align: center;
+  width: 34px;
+}
+section.contact .contact-icon i {
+  color: #fff;
+  font-size: 14px;
+  line-height: 34px;
+  position: relative;
+  z-index: 9;
+}
+section.contact .contact-info .contact-body p {
+  font-family: "Open Sans",sans-serif;
+}
+
+section.social {
+  background-color: #FFC600;
+}
+section.social ul li {
+  margin-right: 10px;
+}
+section.social .social-icon {
+  background: #fff;
+  border-radius: 50%;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+}
+section.social .social-icon i {
+  color: #000;
+  font-size: 20px;
+  line-height: 50px;
+  position: relative;
+  z-index: 9;
+}
+
+section.social .social-icon i:hover {
+  color: #FFC600;
+}
