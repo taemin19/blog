@@ -25,7 +25,7 @@ class Router
  
  	/**
  	*	Return the route matching the URL
- 	* @return
+ 	* @return $route or false
  	*/
   public function getRoute($url)
   {
@@ -56,6 +56,6 @@ class Router
       }
     }
  
-    throw new \Exception('No matching routes');
+    return false;
   }
 }
