@@ -19,6 +19,7 @@ class HTTPResponse extends ApplicationComponent
 	public function send()
 	{
 		$this->page->generatePage();
+		exit;
 	}
 
 	/**
@@ -45,7 +46,10 @@ class HTTPResponse extends ApplicationComponent
 	*/
 	public function redirect404()
 	{
-
+		$this->page = new Page($this->app);
+		$this->page->setView('404.php');
+		$this->addHeader('HTTP/1.0 404 Not Found');
+    	$this->send();
 	}
 
 	/**
