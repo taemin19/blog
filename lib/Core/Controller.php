@@ -92,6 +92,7 @@ abstract class Controller extends ApplicationComponent
 		}
 
 		$this->view = $view;
+		$this->page->setView($this->view.'.php');
 	}
 
 	/*
