@@ -41,7 +41,7 @@ abstract class Controller extends ApplicationComponent
 	*/
 	public function getManager()
 	{
-		$manager = 'app\\'.$this->app->name().'\\Modules\\'.$this->module().'\\'.$this->module().'Manager'; 
+		$manager = 'Core\Model\\'.$this->module().'Manager'; 
 		
 		return new $manager(PDOFactory::getMysqlConnexion());
 	}
