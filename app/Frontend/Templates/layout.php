@@ -32,20 +32,20 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Daniel Thébault</a>
+                <a class="navbar-brand page-scroll" href="#top-page">Daniel Thébault</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#">Accueil</a>
+                        <a class="page-scroll" href="/">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Blog</a>
+                        <a class="page-scroll" href="/blog">Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Ajouter Post</a>
+                        <a class="page-scroll" href="#">Add Post</a>
                     </li>
                 </ul>
             </div>
@@ -60,13 +60,13 @@
         <div class="container">
             <ul class="list-inline">
                 <li>
-                    <a href="#">Accueil</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="/blog">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Ajouter Post</a>
+                    <a href="#">Add Post</a>
                 </li>
             </ul>
             <p>&copy; 2017 Daniel Thébault. All Rights Reserved.</p>
