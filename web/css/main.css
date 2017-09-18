@@ -38,7 +38,7 @@ hr.grey, hr.light {
 hr.grey {
   border-color: rgba(34, 34, 34, 0.2);
 }
-hr, hr.light {
+hr.light {
   border-color: rgba(153, 153, 153, 0.8);
 }
 h1,
@@ -307,7 +307,7 @@ header .header-content .header-content-inner ul {
 }
 
 /* ==========================================================================
-   Section
+   Section / Home
    ========================================================================== */
 
 section {
@@ -411,4 +411,34 @@ section.social .social-icon i {
 
 section.social .social-icon i:hover {
   color: #FFC600;
+}
+
+/* ==========================================================================
+   Section / Blog / Post
+   ========================================================================== */
+.blog {
+  padding: 40px;
+  margin-bottom: 60px;
+  background-color: #FFC600;
+}
+.blog.odd {
+  color: #999999;
+  background-color: #222222;
+}
+.blog-heading, .post-heading {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.blog.odd .blog-heading {
+  color: #FFC600;
+}
+.blog-info p, .post-info p {
+  font-size: 14px;
+}
+.blog-lead, .post-lead {
+  font-weight: bold;
+}
+.blog-lead .more a {
+  color: #FFF;
+  text-transform: uppercase;
 }
