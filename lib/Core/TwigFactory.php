@@ -20,7 +20,8 @@ class TwigFactory
     	$twig = new \Twig_Environment($loader, [
         'cache' => false, //__DIR__.'/../../app/tmp'
       ]);
-
+      $twig->addGlobal('user', new User());
+      
     	return $twig;
   	}
 }
