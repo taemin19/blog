@@ -186,13 +186,17 @@ navbar-default
                 {% include 'flash.php' %}
                 
                 <form action="" method="post">
-                    {{ forms.input('name', label, value.name, {placeholder: 'Your Name...'}) }}
+                    {% if user.hasFlash('validFields') %}
+                        {% set value = user.getFlash('validFields') %}
+                    {% endif %}
+
+                    {{ forms.input('name', 'Name', value.name, {placeholder: 'Your Name...'}) }}
                     
-                    {{ forms.input('email', label, value.email, {placeholder: 'Your Email...'}) }}
+                    {{ forms.input('email', 'Email', value.email, {placeholder: 'Your Email...'}) }}
                     
-                    {{ forms.input('subject', label, value.subject, {placeholder: 'Subject...'}) }}
+                    {{ forms.input('subject', 'Subject', value.subject, {placeholder: 'Subject...'}) }}
                     
-                    {{ forms.textarea('message', label, value.message, {placeholder: 'Your Message...'}) }}
+                    {{ forms.textarea('message', 'Message', value.message, {placeholder: 'Your Message...'}) }}
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
