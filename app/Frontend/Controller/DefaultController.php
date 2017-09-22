@@ -59,6 +59,8 @@ class DefaultController extends Controller
 		}
 		else
 		{
+			// Pre-fill the form with valid fiels
+			$this->app->user()->setFlash('validFields', $validator->validFields());
 			// User message
 			$this->app->user()->setFlash('errors', $validator->errors());
 		}
