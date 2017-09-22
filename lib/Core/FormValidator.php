@@ -10,9 +10,11 @@ class FormValidator
 	/**
 	* @var array $data
 	* @var array $errors
+	* @var array $validFields
 	*/
-	protected $data; // represents post datas
-	protected $errors = [];
+	protected $data; // post datas
+	protected $errors = []; // errors tab
+	protected $validFields = []; // value of valid fields
 
 	/**
 	* @param array $data
@@ -53,6 +55,10 @@ class FormValidator
 		{
 			$this->errors[$name] = ucfirst($name).' is required';
 		}
+		else
+		{
+			$this->validFields[$name] = $this->data[$name];
+		}
 	}
 
 	/**
@@ -63,6 +69,10 @@ class FormValidator
 	{
 		if (!empty($this->data[$name]) && !filter_var($this->data[$name], FILTER_VALIDATE_EMAIL)) {
 			$this->errors[$name] = 'Invalid email format';
+		}
+		else
+		{
+			$this->validFields[$name] = $this->data[$name];
 		}
 	}
 
@@ -77,6 +87,10 @@ class FormValidator
 		if (strlen($this->data[$name]) > $maxLength) 
 		{
 			$this->errors[$name] = ucfirst($name).' must be '.$maxLength.' characters max';
+		}
+		else
+		{
+			$this->validFields[$name] = $this->data[$name];
 		}
 	}
 
@@ -94,5 +108,10 @@ class FormValidator
 	public function errors()
 	{
 		return $this->errors;
+	}
+
+	public function validFields()
+	{
+		return $this->validFields;
 	}
 }
