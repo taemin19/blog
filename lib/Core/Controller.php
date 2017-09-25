@@ -58,7 +58,7 @@ abstract class Controller extends ApplicationComponent
       		throw new \RuntimeException("The ".$this->action." action doesn't exist");
     	}
 
-    	$this->$method();
+    	$this->$method($this->app->httpRequest());
 	}
 
 	/**

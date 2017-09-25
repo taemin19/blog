@@ -1,4 +1,5 @@
 {% extends 'layout.php' %}
+{% import "forms.php" as forms %}
 
 {% block head %}
 <title>Home</title>
@@ -181,23 +182,21 @@ navbar-default
                 </div>
             </div>
             <div class="col-md-7">
+
+                {% include 'flash.php' %}
+                
                 <form action="" method="post">
-                    <div class="form-group">
-                        <label for="name"></label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name...">
-                     </div>
-                    <div class="form-group">
-                        <label for="email"></label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email...">
-                    </div>
-                    <div class="form-group">
-                        <label for="subjet"></label>
-                        <input type="text" class="form-control" id="subject" placeholder="Subject...">
-                    </div>
-                    <div class="form-group">
-                        <label for="message"></label>
-                        <textarea class="form-control" rows="5" id="message">Your Message...</textarea>
-                    </div>
+                    {% if user.hasFlash('validFields') %}
+                        {% set value = user.getFlash('validFields') %}
+                    {% endif %}
+
+                    {{ forms.input('name', 'Name', value.name, {placeholder: 'Your Name...'}) }}
+                    
+                    {{ forms.input('email', 'Email', value.email, {placeholder: 'Your Email...'}) }}
+                    
+                    {{ forms.input('subject', 'Subject', value.subject, {placeholder: 'Subject...'}) }}
+                    
+                    {{ forms.textarea('message', 'Message', value.message, {placeholder: 'Your Message...'}) }}
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
             </div>
