@@ -48,6 +48,7 @@ class Route
 	*/
 	public function match($url)
 	{
+		$url = trim($url, '/');
 		$regex = '#^'.$this->url.'$#';
 
 		if (preg_match($regex, $url, $matches))
@@ -67,7 +68,7 @@ class Route
 	{
 		if (is_string($url)) 
 		{
-			$this->url = $url;
+			$this->url = trim($url, '/');
 		}
 	}
 
