@@ -49,6 +49,32 @@ class PostController extends Controller
 	}
 
     /**
+    * Get a post and update a post
+    * @return void
+    */
+    public function executePostUpdate(HTTPRequest $request)
+    {
+        $manager = $this->getManager();
+        $post = $manager->getUnique($request->getData('id'));
+
+        // if the post is empty redirect to 404 page
+        if (empty($post)) 
+        {
+            $this->app->httpResponse()->redirect404();
+        }
+
+        $this->page->addVar('post', $post);
+
+        // Update post in the database
+        if ($request->requestMethod() == 'POST' ) 
+        {
+            $this->processForm($request);
+                
+            $this->app->httpResponse()->redirect('/admin/post-update-'.$post->id().'/#update-form');
+        }
+    }
+
+    /**
     * Check if form is valid and save post in database
     * @param HTTPRequest $request
     */
@@ -78,6 +104,15 @@ class PostController extends Controller
             if ($request->getExists('id')) 
             {
                 $post->setId($request->getData('id'));
+
+                $manager = $this->getManager();
+                $postDB = $manager->getUnique($request->getData('id'));
+                // If there is no modification, the post is not save
+                if ($post->author() == $postDB->author() && $post->title() == $postDB->title() && $post->lead() == $postDB->lead() && $post->content() == $postDB->content()) 
+                {
+                    $this->app->user()->setFlash('info', 'Nothing to update.');
+                    $this->app->httpResponse()->redirect('/admin/post-update-'.$post->id().'/#update-form');
+                }
             }
 
             $manager = $this->getManager();
