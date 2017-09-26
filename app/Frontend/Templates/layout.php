@@ -10,7 +10,7 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
     <!-- Custom Fonts -->
     <script src="https://use.fontawesome.com/a8f06cd6dd.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -80,6 +80,6 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- Theme JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
