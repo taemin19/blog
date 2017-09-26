@@ -61,7 +61,7 @@ class PostManager extends Manager
     }
  
     $req = $this->dao->query($sql);
-    $req->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Entity\Post');
+    $req->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Core\Entity\Post');
     $listPost = $req->fetchAll();
     $req->closeCursor();
  
@@ -79,7 +79,7 @@ class PostManager extends Manager
     $req->bindValue(':id', (int) $id, \PDO::PARAM_INT);
     $req->execute();
  
-    $req->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Entity\Post');
+    $req->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Core\Entity\Post');
     $post = $req->fetch();
     $req->closeCursor();
     
