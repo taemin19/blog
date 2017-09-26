@@ -56,13 +56,13 @@ class PostController extends Controller
     {
         // Fields validation with rules
         $validator = new FormValidator($_POST);
-        $validator->check('name', 'required');
-        $validator->check('name', 'maxLength', 40);
-        $validator->check('email', 'required');
-        $validator->check('email', 'email');
-        $validator->check('subject', 'required');
-        $validator->check('subject', 'maxLength', 100);
-        $validator->check('message', 'required');
+        $validator->check('author', 'required');
+        $validator->check('author', 'maxLength', 10);
+        $validator->check('title', 'required');
+        $validator->check('title', 'maxLength', 100);
+        $validator->check('lead', 'required');
+        $validator->check('lead', 'maxLength', 200);
+        $validator->check('content', 'required');
 
         // Form validation
         if ($validator->isValid()) 
