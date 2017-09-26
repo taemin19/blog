@@ -45,7 +45,7 @@
                         <a class="page-scroll" href="/blog">Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Add Post</a>
+                        <a class="page-scroll" href="/admin/post-insert">Add Post</a>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
                     <a href="/blog">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Add Post</a>
+                    <a href="/admin/post-insert">Add Post</a>
                 </li>
             </ul>
             <p>&copy; 2017 Daniel Thébault. All Rights Reserved.</p>
