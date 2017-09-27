@@ -31,7 +31,7 @@ navbar-inverse
 
                     <div class="post-info">
                         <span class="text-left">
-                            <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.addDate|date("d/m/Y") }}
+                            <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.updateDate|date("d/m/Y") }}
                         </span>
                         <span class="text-right">
                             <i class="fa fa-user" aria-hidden="true"></i> {{ post.author }}
