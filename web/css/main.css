@@ -177,6 +177,10 @@ img::-moz-selection {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+.navbar-inverse .navbar-toggle {
+  border-color: #9d9d9d;
+  color: #9d9d9d;
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
