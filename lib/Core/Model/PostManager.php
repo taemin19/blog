@@ -1,7 +1,7 @@
 <?php
 namespace Core\Model;
  
-use \Entity\Post;
+use \Core\Entity\Post;
 use \Core\Manager;
 
 /**
