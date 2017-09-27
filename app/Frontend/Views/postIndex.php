@@ -24,9 +24,11 @@ navbar-inverse
     </div><!-- /.container -->
     {% for key, post in listPost %}
     {% if key is odd %}
-        {% set odd = 'odd' %}
+        {% set class = 'odd' %}
+    {% else %}
+        {% set class = '' %}
     {% endif %}
-    <div class="container blog {{ odd }}">
+    <div class="container blog {{ class }}">
 
         <div class="row blog-heading">
             <div class="col-lg-12 text-center">

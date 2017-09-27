@@ -17,19 +17,25 @@ navbar-default
 
       <div class="header-content">
         <div class="header-content-inner">
-          <h1>John Doe</h1>
+          <h1>Daniel Thébault</h1>
           <h3>Web Developper</h3>
-             <ul class="list-inline social-buttons">
-               <li>
-                  <a href="#" class="btn btn-outline btn-xl"><i class="fa fa-github fa-fw"></i> Github</a>
-               </li>
-               <li>
-                  <a href="#" class="btn btn-outline btn-xl"><i class="fa fa-linkedin fa-fw"></i> Linkedin</a>
-               </li>
-            </ul>
             <p>
                <a href="#about" class="page-scroll">About Me <i class="fa fa-arrow-circle-down"></i></a>
             </p>
+            <p>
+                If you need a developer who can provide<br/> Responsive Websites<br/>
+                Front-end/Backend Development<br/>
+                WordPress Websites<br/> 
+                <a href="#contact" class="page-scroll">Contact Me <i class="fa fa-arrow-circle-down"></i></a>
+            </p>
+            <ul class="list-inline social-buttons">
+               <li>
+                  <a href="https://github.com/taemin19" class="btn btn-outline btn-xl"><i class="fa fa-github fa-fw"></i> Github</a>
+               </li>
+               <li>
+                  <a href="https://fr.linkedin.com/in/daniel-thebault-80455380" class="btn btn-outline btn-xl"><i class="fa fa-linkedin fa-fw"></i> Linkedin</a>
+               </li>
+            </ul>
         </div>
       </div>    
     </div>
@@ -51,20 +57,20 @@ navbar-default
         <div class="row">
             <div class="col-md-4">
                 <div class="feature-image">
-                    <img src="img/blog-image.png" class="img-responsive" alt="">
+                    <img src="img/profile.png" class="img-responsive img-thumbnail" alt="profile photo">
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="feature-item">
-                    <h3>Hello, I am John Doe<br/>Web Developper</h3>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3>Hello!, I'm Daniel Thébault,<br/> Web Developper based in Paris</h3>
+                    <p class="text-muted">I am a Front-end and Backend Developper, graduate of OpenClassrooms. I'm majored in application development using PHP / SYMPHONY.<br/>My knowledge of multiple fields (HTML5 / CSS3 / JAVASCRIPT) allows me to work on a project with the full scope in mind. I create responsive websites that allow the user to experience your website in the best and most appropriate way suited to the device they are using.</p>
                 </div>
             </div>
         </div><!-- /.row -->   
 
         <div class="row">
             <div class="feature-button">
-                <a href="#" class="btn btn-inline btn-xl page-scroll">View my CV</a>
+                <a href="doc/cv.pdf" class="btn btn-inline btn-xl page-scroll">View my CV</a>
             </div>
         </div>
 
@@ -90,7 +96,7 @@ navbar-default
                     <h4>HTML</h4>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                            80%
+                            90%
                         </div>
                     </div>
                 </div>
@@ -101,20 +107,20 @@ navbar-default
                     <h4>CSS</h4>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                            80%
+                            85%
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- /.row -->
         <div class="row">
             <div class="col-md-6">
                 <div class="feature-item">
                     <i class="icon-present text-primary"></i>
-                    <h4>JAVA SCRIPT</h4>
+                    <h4>JavaScript</h4>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                            70%
+                            80%
                         </div>
                     </div>
                 </div>
@@ -130,7 +136,20 @@ navbar-default
                     </div>
                 </div>
             </div>
-        </div><!-- /.row -->   
+        </div><!-- /.row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="feature-item">
+                    <i class="icon-present text-primary"></i>
+                    <h4>WordPress</h4>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            80%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.row -->
 
     </div><!-- /.container -->
 </section>
@@ -157,7 +176,7 @@ navbar-default
                             </div>
                             <div class="contact-body">
                                 <h4>Address</h4>
-                                <p class="text-muted">My adress</p>
+                                <p class="text-muted">69 rue Brillat Savarin 75013 Paris</p>
                             </div>
                         </li>
                         <li>
@@ -166,7 +185,7 @@ navbar-default
                             </div>
                             <div class="contact-body">
                                 <h4>Email</h4>
-                                <p class="text-muted">myemail@email.com</p>
+                                <p class="text-muted">daniel.thebault19@gmail.com</p>
                             </div>
                         </li>
                         <li>
@@ -175,7 +194,7 @@ navbar-default
                             </div>
                             <div class="contact-body">
                                 <h4>Phone</h4>
-                                <p class="text-muted">+33 0000000000</p>
+                                <p class="text-muted">+33 0675297240</p>
                             </div>
                         </li>
                     </ul>
@@ -210,17 +229,11 @@ navbar-default
         <div class="row">
             <div class="social-content text-center">
                 <ul class="list-inline">
-                    <li class="social-icon">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li class="social-icon">
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                     <li class="social-icon">
+                        <a href="https://github.com/taemin19"><i class="fa fa-github"></i></a>
                     </li>
                      <li class="social-icon">
-                        <a href="#"><i class="fa fa-github"></i></a>
-                    </li>
-                     <li class="social-icon">
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://fr.linkedin.com/in/daniel-thebault-80455380"><i class="fa fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>
