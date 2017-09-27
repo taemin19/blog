@@ -53,7 +53,7 @@ class PostManager extends Manager
   */
   public function getList($offset = -1, $limit = -1)
   {
-    $sql = 'SELECT id, author, title, lead, content, addDate, updateDate FROM post ORDER BY id DESC';
+    $sql = 'SELECT id, author, title, lead, content, addDate, updateDate FROM post ORDER BY updateDate DESC';
  
     if ($offset != -1 || $limit != -1)
     {
