@@ -31,7 +31,7 @@ navbar-inverse
 
                     <div class="post-info">
                         <span class="text-left">
-                        	<i class="fa fa-calendar" aria-hidden="true"></i> {{ post.addDate|date("d/m/Y") }}
+                        	<i class="fa fa-calendar" aria-hidden="true"></i> {{ post.updateDate|date("d/m/Y") }}
                         </span>
                         <span class="text-right">
                         	<i class="fa fa-user" aria-hidden="true"></i> {{ post.author }}
@@ -45,7 +45,10 @@ navbar-inverse
                     <div class="post-content">
                         <p>{{ post.content|nl2br }}</p>
                     </div>
-                   
+                    
+                    <div>
+                        <p><a href="/admin/post-update-{{ post.id }}" class="btn btn-inline btn-sm"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a></p>
+                    </div>
                 </div>
             </div>
         </div><!-- /.row -->   
