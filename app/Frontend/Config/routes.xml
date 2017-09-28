@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+	<route url="/" module="Default" action="home" />
+	<route url="/blog" module="Post" action="postIndex" />
+	<route url="/post-([0-9]+)" module="Post" action="postShow" vars="id" />
+</routes>
