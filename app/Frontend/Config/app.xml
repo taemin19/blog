@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<definitions>
+	<define var="post_number" value="5" />
+	<define var="post_characters" value="200" />
+	<define var="contact_email" value="daniel.thebault19@gmail.com" />
+</definitions>
