@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+	<route url="/admin/post-insert" module="Post" action="postInsert" />
+	<route url="/admin/post-update-([0-9]+)" module="Post" action="postUpdate" vars="id" />
+	<route url="/admin/post-delete-([0-9]+)" module="Post" action="postDelete" vars="id" />
+</routes>
